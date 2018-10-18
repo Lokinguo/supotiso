@@ -1,0 +1,322 @@
+body {
+    background-color:#351c02;
+}
+.logo {
+    position:absolute;
+    top:0%;
+    width:100%;
+    left:0%;
+}
+.contatos {
+    background:#000;
+    width:100%;
+    height:150px;
+    position: absolute;
+    top:150%;
+}
+
+#numero{
+    position:absolute;
+    top:25%;
+    left:37%;
+    color:#fff;
+}
+.tel{
+    position: absolute;
+    top:32%;
+    left:32%;
+    width:35px;
+    height:35px
+}
+.whats{
+    position: relative;
+    top:32%;
+    left:58%;
+    width:35px;
+    height:35px
+}
+#gmail {
+    position:absolute;
+    top:35%;
+    left:38%;
+    color:#fff;
+}
+
+/*menu hamburguer*/
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu {
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+.menu {
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    transition: box-shadow 1.1s cubic-bezier(.19,1,.22,1);
+}
+
+.menu:hover {
+    box-shadow: 0 0 0 8px #FFF, 0 0 0 8px #FFF;
+}
+
+/*animação do menu*/
+input:checked ~ label .menu {
+    box-shadow: 0 0 0 130vw #000, 0 0 0 130vh #000;
+}
+
+/*só aparecer o menu ao clicar*/
+input:checked ~ ul {
+    opacity: 1;
+    position: fixed;
+}
+
+/*animação e estilo do menu*/
+ul {
+    position: absolute;
+    top: 40%;
+    left:45%;
+ 
+    text-align: center;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    font-size: 45px;
+    opacity: 0;
+    transition: .25s .1s cubic-bezier(0, 1.07, 0, 1.02);
+    z-index: 2;
+
+}
+
+a {
+    color: #fff;
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+    /*funcionamento*/
+    .borda {
+        top:30%;
+        left:13%;
+        width:75%;
+        height:700px;
+        position:absolute;
+        background:#000;
+        border:solid 1px #fff;
+    }
+
+    .funcionamento {
+        border:solid 3px #FFF;
+        top:5%;
+        left:4%;
+        width:90%;
+        height:90%;
+        position:absolute;
+        background:#000;
+     }
+
+     h1 {
+         color:#fff;
+         top:0%;
+         left:35%;
+         position: absolute;
+         font-family: arial;
+         font-size:24px;
+     }
+     .dias {
+         color:#fff;
+         top:10%;
+         left:23%;
+         position: absolute;
+     }
+     #segunda {
+         color:#FFF;
+         top:20%;
+         left:23%;
+         position: absolute;
+     }
+     #terca {
+        color:#FFF;
+        top:25%;
+        left:23%;
+        position: absolute;
+    }
+    #quarta {
+        color:#FFF;
+        top:30%;
+        left:23%;
+        position: relative;
+    }
+    #quinta {
+        color:#FFF;
+        top:35%;
+        left:23%;
+        position: absolute;
+    }
+    #sexta {
+        color:#FFF;
+        top:40%;
+        left:23%;
+        position: absolute;
+    }
+    #sabado {
+        color:#FFF;
+        top:45%;
+        left:23%;
+        position: absolute;
+    }
+    .hora {
+        color:#fff;
+        top:10%;
+        left:60%;
+        position: absolute;
+    }
+    #seg {
+        color:#FFF;
+        top:20%;
+        left:60%;
+        position: absolute;
+    }
+    #ter {
+        color:#FFF;
+        top:25%;
+        left:60%;
+        position: absolute;
+    }
+    #quar {
+        color:#FFF;
+        top:30%;
+        left:60%;
+        position: absolute;
+    }
+    #quin {
+        color:#FFF;
+        top:35%;
+        left:60%;
+        position: absolute;
+    }
+    #sex {
+        color:#FFF;
+        top:40%;
+        left:60%;
+        position: absolute;
+    }
+    #sab {
+        color:#FFF;
+        top:45%;
+        left:60%;
+        position: absolute;
+    }
+    .tpreco{
+        color:#fff;
+        top:60%;
+        left:35%;
+        position: absolute;
+        font-family: arial;
+        font-size:24px;
+     }
+     #masc {
+        color:#FFF;
+        top:70%;
+        left:23%;
+        position: absolute;
+    }
+    #inf {
+        color:#FFF;
+        top:75%;
+        left:23%;
+        position: absolute;
+    }
+    #sobr {
+        color:#FFF;
+        top:85%;
+        left:23%;
+        position: absolute;
+    }
+    #barb {
+        color:#FFF;
+        top:80%;
+        left:23%;
+        position: absolute;
+    }
+    #m {
+        color:#fff;
+        top:70%;
+        left:60%;
+        position: absolute;
+    }
+    #i {
+        color:#fff;
+        top:75%;
+        left:60%;
+        position: absolute;
+    }
+    #b {
+        color:#fff;
+        top:80%;
+        left:60%;
+        position: absolute;
+    }
+    #s {
+        color:#fff;
+        top:85%;
+        left:60%;
+        position: absolute;
+    }
+
